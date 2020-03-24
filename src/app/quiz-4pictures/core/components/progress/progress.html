@@ -1,0 +1,17 @@
+<div class="container">
+    <div id="sameline">
+            <span>Уровень {{level}}</span>
+            <div>
+                <span *ngFor="let live of ' '.repeat(lives).split('')" class="icon1"></span>
+                <span *ngFor="let live of ' '.repeat(empty_lives).split('')" class="icon"></span>
+            </div>
+            <span>{{score}} / {{total}}</span>
+    </div>
+
+    <div class="bg">
+        <div [ngStyle]="{'width': (score * 100)/total + '%'}" class="bar"></div>
+    </div>
+</div>
+
+
+  

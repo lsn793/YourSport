@@ -1,0 +1,50 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0px;
+ }
+
+.grid-item {
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 0px;
+    text-align: center;
+  }
+
+.responsive {
+  width: 100%;
+  /* max-width: 500px; */
+  height: auto;
+}
+
+.card__image {
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 0px;
+  border: 1px solid rgb(209, 208, 208);
+  /* margin: 7px; */
+}
+
+.card__image > img {
+  transition: all .25s ease-in-out;
+}
+
+.card__image:hover > img {
+  transform: scale(1.2);
+  cursor: pointer;
+  cursor: hand;
+}
+.question{
+  /* text-align: center; */
+
+}
+
+:host{
+  display: block;
+  max-width: 520px;
+  text-align: center;
+}
+
+img{
+  
+}

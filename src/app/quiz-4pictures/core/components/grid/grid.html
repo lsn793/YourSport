@@ -1,0 +1,12 @@
+<div [@Disappear]="animate == 'nextgrid' ? 'out' : 'in'" class="question">
+    <H1>{{question}}</H1>
+</div>
+<div [@FlyOutLoose]="animate == 'loose' ? 'out' : 'in'" [@FlyInOut]="animate == 'nextgrid' ? 'out' : 'in'" (@FlyInOut.done)="animationDone($event)" (@FlyOutLoose.done)="animationDone($event)" class="grid-container responsive">
+    <div *ngFor="let src of images_path" class="grid-item">
+        <div class="card__image">
+           <img class="responsive" src="{{path}}{{src}}" (click)="onClick($event)" >
+        </div>
+    </div> 
+</div>
+
+

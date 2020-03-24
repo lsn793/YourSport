@@ -1,0 +1,13 @@
+<div @FlyIn>
+  <H2>Вы проиграли</H2>
+  <div>Уровень: {{answers}}</div>
+  <br>
+  <div>Ваш результат: {{question}}</div>
+  <div>Рекорд для уровня: {{animate}}</div>
+  
+  <br>
+  <div><button (click)="onClick(0)">Еще раз уровень {{answers}}</button></div>
+  <br>
+  <div *ngIf="answers > 1"><button (click)="onClick(1)">Начать с первого уровня</button></div>
+  
+</div>

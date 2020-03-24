@@ -1,0 +1,42 @@
+.container{
+  max-width: 520px;
+  			
+}
+
+.bg{
+  clear: both; /*clear float from bottom elements https://css-tricks.com/all-about-floats/*/
+  background-color: #ddd;
+  height: 2px;
+}
+
+.bar{
+  background-color: #369;
+  height: 2px;
+}
+
+.icon {
+  margin: 0 0 0 3px;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url() 0 0 no-repeat;
+  background-image: url(../../../../../assets/icons/like.svg), none;
+  background-size: auto 100%;
+  vertical-align: middle;
+}
+
+.icon1 {
+  margin: 0 0 0 3px;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url() 0 0 no-repeat;
+  background-image: url(../../../../../assets/icons/like1.svg), none;
+  background-size: auto 100%;
+  vertical-align: middle;
+}
+
+#sameline {
+  display: flex;
+  justify-content: space-between;
+}
