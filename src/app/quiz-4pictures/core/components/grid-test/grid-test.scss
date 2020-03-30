@@ -1,14 +1,15 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 0px;
- }
+.answer {
+    padding: 5px;
+    margin: 5px;
+    text-align: left;
+    cursor: pointer;
+    background-color: #eee;
+    border: 2px solid #eee;
 
-.grid-item {
-    border-radius: 3px;
-    padding: 10px;
-    font-size: 0px;
-    text-align: center;
+    &:hover {
+      background-color: lightgoldenrodyellow;
+      border: 2px solid goldenrod;
+    }
   }
 
 .responsive {
@@ -21,7 +22,6 @@
   border-radius: 3px;
   overflow: hidden;
   padding: 0px;
-  border: 1px solid rgb(209, 208, 208);
   /* margin: 7px; */
 }
 
@@ -42,8 +42,4 @@
   display: block;
   max-width: 520px;
   text-align: center;
-}
-
-img{
-  
 }

@@ -1,0 +1,14 @@
+<div [@Disappear]="animate == 'nextgrid' ? 'out' : 'in'" class="flex">
+    <div *ngIf="question[0]"><H1>{{question[0]}}</H1></div>
+    <div *ngIf="question[1]">
+        <img class="responsive" src="{{path}}{{question[1]}}">
+    </div>
+</div>
+
+<div [@FlyOutLoose]="animate == 'loose' ? 'out' : 'in'" [@FlyInOut]="animate == 'nextgrid' ? 'out' : 'in'" (@FlyInOut.done)="animationDone($event)" (@FlyOutLoose.done)="animationDone($event)" class="responsive">
+    <div *ngFor="let answer of answers_text" class="answer" (click)="onClick($event)">
+           {{answer}}
+    </div> 
+</div>
+
+

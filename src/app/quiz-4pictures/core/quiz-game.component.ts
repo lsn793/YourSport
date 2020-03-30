@@ -48,7 +48,7 @@ export class QuizGameComponent implements OnInit {
         this.quizes = this.quizService.getFlagsQuizHard();
         break;
       default:
-        this.quizes = this.quizService.getFlagsQuizEasy();
+        this.quizes = this.quizService.getSportTest();
     }
 
     this.total_lives = this.setInitLives();

@@ -1,9 +1,13 @@
 import { Injectable }           from '@angular/core';
 import { GridComponent }        from './components/grid/grid';
+import { GridTestComponent }        from './components/grid-test/grid-test';
 import { QuizItem }             from './quiz-item';
 
 @Injectable()
 export class QuizService {
+  getSportTest(){
+    return [[new QuizItem(GridTestComponent, ["Какого клуба этот флаг?", "/tests/barselona.jpg"], {"Зенит": false, "Милан": false, "Барселона": true})]]
+  };
   getFlagsQuizEasy() {
     return [[//level1
       new QuizItem(GridComponent, "Китай",  {"/flags/cn.png": true, '/flags/vn.png':false,'/flags/ki.png':false,'/flags/gr.png':false}),
